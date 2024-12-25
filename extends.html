@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> EXTENDS IN JS </h1>
+    <p id="para"></p>
+    <script>
+        class car
+        {
+            constructor(brand)
+            {
+                this.brand=brand
+            }
+            present()
+            {
+                return "I have a car " + this.brand;
+            }
+        }
+        class model extends car{
+            constructor(brand, mod);
+        {
+            this.mod=mod;
+        }
+        show()
+        {
+            return this.present() + ' it is a ' + this.model;
+        }
+    }
+        let mycar=newmodel("Audi","audi Q7");
+        document.getElementById("para").innerHTML=mycar.show();
+        </script>
+</body>
+</html>
